@@ -1,35 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My First Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Website</title>
+
   <style>
     body {
-      font-family: Arial;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       text-align: center;
-      background: #f2f2f2;
-      margin-top: 100px;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 20px;
     }
 
     h1 {
-      color: #333;
+      font-size: 48px;
+      margin-bottom: 10px;
     }
 
-    .box {
-      background: white;
+    p {
+      font-size: 18px;
+      color: #cbd5e1;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #2563eb;
+      transform: scale(1.05);
+    }
+
+    .card {
+      margin-top: 30px;
       padding: 20px;
-      margin: auto;
-      width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
     }
   </style>
 </head>
 
 <body>
-  <div class="box">
-    <h1>Hello 👋</h1>
-    <p>This is my first website!</p>
+  <div class="container">
+    <h1>👋 Hi, I'm Building My Website</h1>
+    <p>This is my first modern website hosted for free on GitHub Pages.</p>
+
+    <a class="btn" href="#">My Projects</a>
+
+    <div class="card">
+      <h3>About Me</h3>
+      <p>I am learning how to build websites step by step.</p>
+    </div>
   </div>
 </body>
 </html>
