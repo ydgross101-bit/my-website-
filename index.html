@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y D G's First Website</title>
 
   <style>
     body {
@@ -17,60 +17,76 @@
       height: 100vh;
       text-align: center;
     }
-<h1>TEST UPDATE 123</h1>
+
     .container {
-      max-width: 600px;
+      max-width: 700px;
       padding: 20px;
     }
 
     h1 {
-      font-size: 48px;
+      font-size: 52px;
       margin-bottom: 10px;
+      letter-spacing: 2px;
     }
 
     p {
-      font-size: 18px;
+      font-size: 20px;
       color: #cbd5e1;
       margin-bottom: 30px;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 12px 25px;
-      background: #3b82f6;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
     }
 
-    .btn:hover {
+    .btn {
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .primary {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .primary:hover {
       background: #2563eb;
       transform: scale(1.05);
     }
 
-    .card {
-      margin-top: 30px;
-      padding: 20px;
-      background: rgba(255,255,255,0.05);
-      border-radius: 12px;
-      backdrop-filter: blur(10px);
+    .secondary {
+      background: transparent;
+      border: 2px solid #3b82f6;
+      color: #3b82f6;
+    }
+
+    .secondary:hover {
+      background: #3b82f6;
+      color: white;
+      transform: scale(1.05);
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>👋 Hi, I'm Building My Website</h1>
-    <p>This is my first modern website hosted for free on GitHub Pages.</p>
 
-    <a class="btn" href="#">My Projects</a>
+    <h1>Y D G'S FIRST WEBSITE</h1>
 
-    <div class="card">
-      <h3>About Me</h3>
-      <p>I am learning how to build websites step by step.</p>
+    <p>This is my first modern website</p>
+
+    <div class="buttons">
+      <a href="#projects" class="btn primary">My Projects</a>
+      <a href="#about" class="btn secondary">About Me</a>
     </div>
+
   </div>
 </body>
 </html>
